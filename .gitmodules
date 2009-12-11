@@ -1,0 +1,3 @@
+[submodule "marion"]
+	path = marion
+	url = git@github.com:geckoman/marionette.git

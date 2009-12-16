@@ -1,0 +1,257 @@
+/*	------------------------- for content editiors ----------------
+	having this here allow the stying of the backend content editor with out having to change
+	any backend code.
+*/
+body.deskman {
+  width: 524px;
+  padding: 10px 20px;
+  margin: 10px 40px;
+  background-image: none;
+  background-color: #fff;
+}
+body.deskman table {
+  empty-cells: show;
+}
+body.deskman table td, body.deskman table th {
+  font-size: 8px;
+}
+body.deskman a {
+  text-decoration: underline;
+}
+body.deskman br {
+	display: inline;
+}
+body.deskman div {
+	background-color: #ecf6ff;
+  margin: 10px -10px;
+  padding: 5px 10px;
+  width: 100%;
+  border: 1px dashed #e7e7e7;
+}
+
+/*	------------------------- deskman ------------------------
+	the future of copywirting tools..
+	For any area that is considered 'body copy', especialy if the client is editing it,
+	give the 'containing' parent a class of deskman to bring in the content styling..
+*/
+
+/* ------------------------- base font -------------------------
+  I have the html element set to an overflow of scroll due to the fact that in doing
+  a fair amount of javascript where the content of the page get's dynamicaly taller,
+  setting this will prevent the scoll bar form showing up and having everthing oddly shift to one side..
+*/
+html {
+  overflow: scroll;
+  background: #011e39 url(../images/background/main_back_repeater.png) repeat-x scroll 0 0;
+}
+body, select, input, textarea {
+  font-family: Georgia,times,serif;
+  color: #71717f;
+}
+/* ------------------------- headlines and body copy ------------
+*/
+.deskman h1 {
+  font-size: 4em;
+  font-weight: bold;
+  margin-bottom: .3em;
+  letter-spacing: -.05em;
+  color: #002d56;
+}
+.deskman h2 {
+  font-size: 3em;
+  margin-bottom: .3em;
+  letter-spacing: -.03em;
+  color: #002d56;
+  font-weight: bold;
+  font-style: italic;
+}
+.deskman h3 {
+  font-size: 2.2em;
+  margin-bottom: .3em;
+  font-style: italic;
+  color: #555560;
+  font-weight: bold;
+}
+.deskman h4 {
+  font-size: 1.6em;
+  font-style: italic;
+  color: #555560;
+  font-weight: bold;
+  margin-bottom: .3em;
+}
+.deskman h5 {
+  font-size: 1.4em;
+  margin-bottom: .3em;
+}
+.deskman p, .deskman h6 {
+  font-size: 1.3em;
+  margin-bottom: 1em;
+  line-height: 1.6em;
+}
+.deskman h6 {
+  font-style: italic;
+}
+.deskman p {
+}
+/* ------------------------- lists ------------------------------
+  in unorderd lists, it is easier to use background images due to the inconsitancy
+  across browsers of the 'list marker'
+*/
+.deskman ul, .deskman ol {
+  margin: 0 0 10px 0;
+}
+.deskman ul {
+  list-style-position: outside;
+  list-style-type: disc;
+  margin-left: 15px;
+}
+.deskman ol {
+  list-style-position: inside;
+  list-style-type: decimal;
+}
+.deskman li {
+  font-size: 1.3em;
+  line-height: 1.6em;
+  margin:0 0 0 0;
+  padding:5px 0 0 0;
+}
+.deskman dl {
+  margin: 5px 0 15px 0;
+}
+.deskman dl dt {
+  font-weight: bold;
+  font-size: 1.6em;
+  color: #002d56;
+  font-style: italic;
+}
+.deskman dl dd {
+  margin-left: 1em;
+  font-size: 1.3em;
+  font-style: italic;
+}
+/* ------------------------- in line elements and links ------------
+*/
+.deskman hr {
+  border-bottom: 1px solid #c2c2cc;
+  border-top: 1px solid #fff;
+  margin: 10px 0;
+  float: left;
+  width: 100%;
+}
+.deskman em, .deskman i {
+  font-style: italic
+}
+.deskman del {
+  text-decoration: line-through;
+}
+.deskman strong, .deskman b {
+  font-weight: bold;
+  color: #252530;
+  text-transform: uppercase;
+}
+.deskman a {
+  text-decoration: underline;
+  color: #002d56;
+}
+.deskman a:visited, .deskman a:visited * {
+  color: #55758f;
+}
+.deskman a.button:visited, .deskman a.button:visited * {
+  color: #fff;
+}
+.deskman a:hover {
+  text-decoration: none;
+  color: #005826;
+}
+/* ------------------------- forms ----------------------------
+  with using 'table-less' forms, I set the width of the labels and but break tags
+  before the labels I wish to be on a new line. I have found that this is a most
+  mutable was of constructing forms, and cut's down on useless markup by a lot.
+  Having said that though.. I one wishes to have a 'inline-form' where all of the 
+  form elements are in a single line, the a class of 'inline_form' is provided to put 
+  on the containing element
+*/
+.deskman fieldset, fieldset.deskman {
+  padding: 5px 10px;
+}
+.deskman legend {
+  font-size: 1.8em;
+  padding: 0 5px;
+}
+.deskman label {
+  font-size: 1.5em;
+  padding: .3em 1em 0 0;
+  vertical-align:top;
+  line-height: 1.4em;
+}
+.deskman input, .deskman textarea, .deskman select {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  font-size: 1.4em;
+  margin: 0 1em .7em 0em;
+  border-color: #002d56;
+}
+.deskman select {
+  padding: .3em .5em;
+}
+.deskman input[type=submit] {
+  text-decoration: none;
+  border-width: 0;
+  background-color: #011e39;
+  color: #fff;
+  padding: .3em .7em;
+}
+.deskman input[type=submit]:hover {
+  opacity: .7
+}
+.deskman input[type=text] {
+  width: 15em;
+  padding: .3em .5em .3em .5em;
+}
+.deskman input[type=checkbox], .deskman input[type=radio] {
+  background-color: transparent;
+}
+.deskman textarea {
+  height: 15em;
+  width: 17.5em;
+  padding: .5em;
+  width: 25em;
+}
+.deskman textarea.wide_textarea {
+  height: 10em;
+  width: 100%;
+}
+.deskman.inline_form input, .deskman .inline_form input {
+  width: auto;
+}
+.deskman.inline_form input[type=submit], .deskman .inline_form input[type=submit] {
+  margin-left: 10px;
+}
+.deskman .inline_form label, .deskman.inline_form label {
+  width: auto;
+}
+/* ------------------------- styled tables ----------------------
+  traditionaly, the first row in a table if put inside of the 'thead' (table head) tag
+  the first element of each row is then put into a 'th' (table headline) cell tag
+
+/* ------------------------- blockquote -----------------------
+*/
+.deskman blockquote {
+	float: left;
+	margin-bottom:45px;
+	padding-top: 36px;
+	width:210px;
+}
+.deskman blockquote.left {
+  margin-right: 20px;
+}
+.deskman blockquote.right {
+  margin-left: 20px;
+  float: right;
+}
+.deskman blockquote p {
+	font-style: italic;
+	margin-bottom: -35px;
+	padding: 10px 20px 35px;
+	float: left;
+}

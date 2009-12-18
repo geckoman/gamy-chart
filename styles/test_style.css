@@ -7,6 +7,7 @@
   dark_grey : #252530;
   green : #005826;
 */
+
 /*	------------------------- container ------------------------
   i absolutly position the container in the center rather then having it be centered
   using a margin: auto beacuse the div is floated to the left already, to fit with my
@@ -17,18 +18,14 @@
   but this has an easy fix with javascript..
 */
 #container, #jax_container {
-  width: 900px;
+  width: 960px;
   overflow: visible;
   left:50%;
-  margin-left: -470px;
+  margin-left: -480px;
 }
 #container {
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  background-color: #fff;
   margin-top: 50px;
   margin-bottom: 50px;
-  padding: 20px;
 }
 #full_screen {
   width: 100%;
@@ -100,16 +97,10 @@ ul.navi.primary li a {
   margin: 2px 0 0 8px;
   font-size:1.6em;
   font-weight: bold;
-  color: #252530;
   text-transform: uppercase;
-  border: 1px solid #fff;
   white-space: nowrap;
 }
 ul.navi.primary li a:hover, ul.navi.primary li a.active {
-	background-color: #bfcad5;
-	-moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-color: #002d56;
 }
 ul.navi.account {
   float: right;
@@ -124,7 +115,6 @@ ul.navi.account li a {
   text-align: right;
   padding: 1px 10px 2px 10px;
   font-size: 1.2em;
-  color: #fff;
   text-transform: uppercase;
   font-weight: bold;
   opacity: .7;

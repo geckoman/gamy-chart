@@ -42,7 +42,6 @@ body.deskman div {
 */
 html {
   overflow: scroll;
-  background: #011e39 url(../images/background/main_back_repeater.png) repeat-x scroll 0 0;
 }
 body, select, input, textarea {
   font-family: Georgia,times,serif;
@@ -52,32 +51,21 @@ body, select, input, textarea {
 */
 .deskman h1 {
   font-size: 4em;
-  font-weight: bold;
   margin-bottom: .3em;
   letter-spacing: -.05em;
-  color: #002d56;
 }
 .deskman h2 {
   font-size: 3em;
   margin-bottom: .3em;
   letter-spacing: -.03em;
-  color: #002d56;
-  font-weight: bold;
-  font-style: italic;
 }
 .deskman h3 {
   font-size: 2.2em;
   margin-bottom: .3em;
-  font-style: italic;
-  color: #555560;
-  font-weight: bold;
 }
 .deskman h4 {
   font-size: 1.6em;
-  font-style: italic;
-  color: #555560;
-  font-weight: bold;
-  margin-bottom: .3em;
+   margin-bottom: .3em;
 }
 .deskman h5 {
   font-size: 1.4em;
@@ -119,15 +107,11 @@ body, select, input, textarea {
   margin: 5px 0 15px 0;
 }
 .deskman dl dt {
-  font-weight: bold;
   font-size: 1.6em;
-  color: #002d56;
-  font-style: italic;
 }
 .deskman dl dd {
-  margin-left: 1em;
   font-size: 1.3em;
-  font-style: italic;
+  margin-left: 1em;
 }
 /* ------------------------- in line elements and links ------------
 */
@@ -146,7 +130,6 @@ body, select, input, textarea {
 }
 .deskman strong, .deskman b {
   font-weight: bold;
-  color: #252530;
   text-transform: uppercase;
 }
 .deskman a {
